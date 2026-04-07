@@ -1,0 +1,12 @@
+name: My First CI
+on: [push] # یعنی هر وقت پوش کردم، بیدار شو!
+
+jobs:
+  test-logic:
+    runs-on: ubuntu-latest # یک لینوکس مجازی برای ما روشن کن
+    steps:
+      - uses: actions/checkout@v4 # کدهای من را بردار
+      - name: Run Python Script
+        run: python3 main.py # کد من را اجرا کن ببین ارور می‌دهد یا نه
+
+
