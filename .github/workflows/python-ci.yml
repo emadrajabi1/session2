@@ -6,9 +6,7 @@ jobs:
 
     steps:
       - name: checkout code
-        run: |
-          git clone https://github.com/emadrajabi1/session2.git
-          mv session2{.,}* .
+        run: git clone https://github.com/emadrajabi1/session2.git
         
       - name: install python and pip
         run: sudo apt-get update && sudo apt-get install -y python3 python3-pip
