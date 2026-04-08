@@ -4,7 +4,6 @@ on: [push]
 jobs:
   test:
     runs-on: ubuntu-latest
-  
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -17,11 +16,12 @@ jobs:
       - name: Run script
         run: python3 main.py
 
-              - name: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-            github_token: ${{ secrets.GITHUB_TOKEN }}
-            publish_dir: ./  # یعنی همین‌جا که هستی رو آنلاین کن
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./
+یعنی همین‌جا که هستی رو آنلاین کن
 
 
 
