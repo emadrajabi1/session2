@@ -13,4 +13,4 @@ with open("index.html", "w") as f:
     f.write(html_content)
 
 print("Website created successfully!")
-
+site ro sakhtam horaaaaaa
